@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sismopedia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="shortcut icon" href="assets/logo1.png" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
+    <!-- ANIMATECSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="">
+
+    <div class="box relative overflow-x-hidden">
+        <header class="fixed w-screen lg:w-full h-24 bg-red-900 flex items-center text-white justify-between px-10 md:text-[20px] text-[14px] z-10">
+
+            <div class="nav-left">
+                <div class="logo flex items-end font-semibold gap-5 ">
+
+                    <img src="assets/logo1.png" class="h-[4em]" alt="">
+                
+                    <span class="text-[2em] h-fit pb-0.5 md:pb-2 ">Sismopedia</span>
+                
+                </div>
+                
+            </div>
+            
+            
+            <ul class="hidden gap-5 lg:flex">
+                <li>Home</li>
+                <li>Novedades</li>
+                <li>Historia</li>
+                <li>Donaciones</li>
+                <li>Contactos</li>
+            </ul>
+
+
+
+            <input type="checkbox" name="" id="menu-mobile" class="hidden peer/menu ">
+            <label for="menu-mobile" class="lg:hidden block">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="" class="w-[35px]">
+            </label>
+
+            <aside class="z-20 p-3 fixed top-0 right-0 w-[250px] h-screen bg-red-900 translate-x-[250px] peer-checked/menu:translate-x-0 duration-200">
+                <ul class="gap-5 space-y-5 font-medium">
+                    <li>Home</li>
+                    <li>Novedades</li>
+                    <li>Historia</li>
+                    <li>Donaciones</li>
+                    <li>Contactos</li>
+                </ul>
+                
+                <label for="menu-mobile" class="text-2xl text-white absolute top-[20px] right-[20px] cursor-pointer z-30">
+                    X
+                </label>
+            </aside>
+    
+            <label for="menu-mobile" class="absolute hidden left-0 top-0 w-screen h-screen  bg-black/50 peer-checked/menu:block z-10"></label>
+    
+            
+        </header>
+        
+        <main class="pt-28 ">
+            
+            
+            <section class="max-w-[1230px] mb-7 text-[18px] mx-auto">
+                <div class="md:flex-row flex-col  flex ">
+
+                    <div data-aos="fade-right" class="concept md:w-1/2 w-full p-4">
+
+                        
+                        <h2 class="text-2xl  t mb-3 font-bold">¿Que es un terremoto?</h2>
+                        <p class="text-pretty">Los terremotos son fenómenos naturales que ocurren súbitamente, sin aviso. A diferencia de los huracanes, los terremotos no son pronosticables. Un terremoto es un movimiento violento del terreno ocasionado por la liberación de energía que surge del interior de la Tierra. Esta energía puede surgir de una fuente natural como es el rompimiento de rocas de la corteza terrestre, por una erupción volcánica, o por fuentes no-naturales como son las explosiones.</p>
+                    </div>
+
+
+
+                    <div class="md:w-1/2 shake w-full p-4" data-aos="fade-left">
+                        <img src="https://ecoexploratorio.org/wp-content/uploads/2022/07/regiones-de-actividad-sismica-y-volcanica-mundial-500x200-1.jpg" alt="">
+                    </div>
+
+
+
+                </div>
+
+                <div class="flex md:flex-row flex-col-reverse mb-7">
+
+                    
+                    
+                    
+                    <div class="md:w-1/2 shake w-full p-4" data-aos="fade-right">
+                        <img src="https://ecoexploratorio.org/wp-content/uploads/2022/07/terremotos-de-gran-magnitud-rev.jpg" alt="">
+                    </div>
+                    
+                    <div data-aos="fade-left" class="concept md:w-1/2 w-full p-4">
+
+                        
+
+                        <p class="text-pretty">
+                            Cuando las rocas de la corteza terrestre se rajan, dividen o rompen, ocurre una liberación de energía acumulada, y a esos terremotos se le conoce como de origen tectónico. Generalmente estos rompimientos ocurren a lo largo de fracturas de la corteza terrestre o fallas geológicas, que a su vez están asociados al movimiento de placas tectónicas. Los terremotos de origen volcánico liberan la energía producida por el rompimiento de rocas debido al movimiento de magma bajo la superficie. Mientras los terremotos por explosiones pueden generar débiles ondas sísmicas. Estos procesos pueden causar un “ruido” sísmico. Este ruido es la vibración de las ondas sísmicas hacia la superficie.
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+            <section class="max-w-[1230px] text-[18px] mb-7 mx-auto">
+
+                <div class="p-4">
+                    <div class="px-4 mb-5" data-aos="fade-down">
+                        <h3 class="mb-5 text-xl font-bold">Ondas de cuerpo (P y S)</h3>
+                        <p>Las ondas de cuerpo viajan a través de las capas internas de la tierra.</p>
+
+                    </div>
+    
+                    <div class="md:flex">
+    
+                        <div data-aos="fade-right" class="p-4   md:w-1/2 md:flex md:items-center">
+                            <p>
+
+                                <span class="font-semibold">Ondas P:</span> Estas son las ondas que llegan más rápidas y son las primeras que se registran en los instrumento sísmicos. Esta onda se mueve a través de roca sólida y fluidos. El movimiento del terreno es vertical, hacia arriba y hacia abajo.
+                            </p>
+                        </div>
+                        
+                        <div data-aos="fade-left" class="p-4 shake-vertical md:w-1/2 justify-center flex">
+                            <img  src="https://ecoexploratorio.org/wp-content/uploads/2022/07/ondas-de-cuerpo-P.jpg" alt="">
+                        </div>
+    
+                    </div>
+
+
+
+                    <div class="md:flex">
+    
+                        <div data-aos="fade-right" class="p-4  md:w-1/2 md:flex md:items-center">
+                            <p>
+
+                                <span class="font-semibold">Ondas S:</span> Estas ondas sísmicas llegan después que las ondas P porque viajan más lentamente. Por lo tanto, son las segundas que se sienten cuando ocurre un terremoto, y el movimiento del terreno es hacia los lados. Esta onda es más suave y solo se mueve a través de un medio solido, no liquido.
+                            </p>
+                        </div>
+                        
+                        <div data-aos="fade-left" class="shake-horizontal p-4 md:w-1/2 justify-center flex">
+                            <img  src="https://ecoexploratorio.org/wp-content/uploads/2022/07/ondas-de-cuerpo-S.jpg" alt="">
+                        </div>
+    
+                    </div>
+
+                </div>
+            
+
+
+
+            </section>
+
+
+
+        </main>
+
+        <footer class="h-24 bg-zinc-950 text-white flex justify-center items-center">
+            &copy; Copyright Todos los derechos reservados
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
